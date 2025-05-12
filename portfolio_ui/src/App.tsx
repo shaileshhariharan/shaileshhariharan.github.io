@@ -30,7 +30,7 @@ function App() {
             </a>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Shaileshhariharan03"
                 target="_blank"
                 rel="noopener noreferrer"
               >
