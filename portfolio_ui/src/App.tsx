@@ -37,7 +37,7 @@ function App() {
                 <Github className="w-5 h-5 hover:text-purple-600 transition-colors" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/shailesh-h-32a8b71a8/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
