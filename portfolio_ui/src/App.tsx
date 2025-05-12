@@ -1,5 +1,12 @@
-import React from 'react';
-import { Code2, Mail, Github, Linkedin, ExternalLink, Brain, Blocks } from 'lucide-react';
+import {
+  Mail,
+  Github,
+  Linkedin,
+  ExternalLink,
+  Cpu,
+  Bike,
+  ListTodo,
+} from "lucide-react";
 
 function App() {
   return (
@@ -7,15 +14,33 @@ function App() {
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm z-50 shadow-sm">
         <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <span className="text-xl font-bold gradient-text">dev</span>
+          <span className="text-xl font-bold gradient-text">shailesh</span>
           <div className="flex gap-6">
-            <a href="#projects" className="hover:text-purple-600 transition-colors">Projects</a>
-            <a href="#contact" className="hover:text-purple-600 transition-colors">Contact</a>
+            <a
+              href="#projects"
+              className="hover:text-purple-600 transition-colors"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="hover:text-purple-600 transition-colors"
+            >
+              Contact
+            </a>
             <div className="flex gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="w-5 h-5 hover:text-purple-600 transition-colors" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="w-5 h-5 hover:text-purple-600 transition-colors" />
               </a>
             </div>
@@ -26,17 +51,19 @@ function App() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-6xl font-bold mb-6">
-            Hey, I'm <span className="gradient-text">[Your Name]</span>
+          <h1 className="text-5xl font-bold mb-6">
+            Hey, I'm <span className="gradient-text">Shailesh</span>
           </h1>
           <p className="text-xl text-zinc-600 dark:text-zinc-300 max-w-2xl mb-8">
-            I craft digital experiences through code. Specializing in machine learning,
-            React development, and blockchain solutions.
+            I build full-stack apps, train AI models, and ship stuff that
+            actually works. React, Angular, Django, Streamlit, FastAPI —
+            whatever fits. I like clean UIs, fast backends, and smart systems
+            that make a real difference.
           </p>
           <div className="flex gap-4">
             <a
               href="#contact"
-              className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors inline-flex items-center gap-2"
+              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors inline-flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
               Get in touch
@@ -51,46 +78,82 @@ function App() {
           <h2 className="text-3xl font-bold mb-12">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-zinc-50 dark:bg-zinc-900 p-8 rounded-xl shadow-sm card-hover">
-              <Brain className="w-10 h-10 mb-4 text-purple-600" />
-              <h3 className="text-xl font-bold mb-3">ML Analytics Platform</h3>
+              <Cpu className="w-10 h-10 mb-4 text-purple-600" />
+              <h3 className="text-xl font-bold mb-3">
+                AI enabled Car parking using OpenCV
+              </h3>
               <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-                A machine learning model for predictive analytics, processing real-time data streams.
+                An AI-powered system using OpenCV to automate and optimize car
+                parking through real-time image processing and object detection,
+                tackling issues like congestion and poor space allocation.
               </p>
               <div className="flex gap-2 mb-6">
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Python</span>
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">TensorFlow</span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  Python
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  OpenCV
+                </span>
               </div>
-              <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
+              <a
+                href="https://github.com/Shaileshhariharan03/AIEnabledCarParking_OpenCV"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300"
+              >
                 View Project <ExternalLink className="w-4 h-4 ml-2" />
               </a>
             </div>
 
             <div className="bg-zinc-50 dark:bg-zinc-900 p-8 rounded-xl shadow-sm card-hover">
-              <Blocks className="w-10 h-10 mb-4 text-purple-600" />
-              <h3 className="text-xl font-bold mb-3">Solana DeFi Protocol</h3>
+              <Bike className="w-10 h-10 mb-4 text-purple-600" />
+              <h3 className="text-xl font-bold mb-3">
+                Food Delivery Flutter App
+              </h3>
               <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-                Decentralized finance protocol built on Solana, enabling fast and secure transactions.
+                A cross-platform mobile app built with Flutter that lets users
+                order food from various restaurants for home delivery. Designed
+                for both iOS and Android, it offers a smooth and intuitive user
+                experience.
               </p>
               <div className="flex gap-2 mb-6">
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Rust</span>
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Solana</span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  Flutter
+                </span>
               </div>
-              <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
+              <a
+                href="https://github.com/Shaileshhariharan03/fooddeliveryapp_flutter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300"
+              >
                 View Project <ExternalLink className="w-4 h-4 ml-2" />
               </a>
             </div>
 
             <div className="bg-zinc-50 dark:bg-zinc-900 p-8 rounded-xl shadow-sm card-hover">
-              <Code2 className="w-10 h-10 mb-4 text-purple-600" />
-              <h3 className="text-xl font-bold mb-3">Real-time Dashboard</h3>
+              <ListTodo className="w-10 h-10 mb-4 text-purple-600" />
+              <h3 className="text-xl font-bold mb-3">Todo List iOS App</h3>
               <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-                Modern dashboard with real-time data visualization and analytics features.
+                This is a simple Todo List app built using SwiftUI. The app
+                allows users to create, update, and delete tasks. The tasks are
+                displayed in a list format, and users can mark tasks as
+                completed or pending with a simple tap.
               </p>
               <div className="flex gap-2 mb-6">
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">React</span>
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">TypeScript</span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  SwiftUI
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  iOS
+                </span>
               </div>
-              <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
+              <a
+                href="https://github.com/Shaileshhariharan03/TodoList_App"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300"
+              >
                 View Project <ExternalLink className="w-4 h-4 ml-2" />
               </a>
             </div>
@@ -102,11 +165,18 @@ function App() {
       <section id="contact" className="section px-4">
         <div className="max-w-7xl mx-auto flex justify-center">
           <div className="w-full max-w-2xl">
-            <h2 className="text-3xl font-bold mb-12 text-center">Get in Touch</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              Get in Touch
+            </h2>
             <div className="bg-white dark:bg-zinc-800 p-8 rounded-xl shadow-sm">
               <form className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium mb-2" htmlFor="name">Name</label>
+                  <label
+                    className="block text-sm font-medium mb-2"
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -114,7 +184,12 @@ function App() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2" htmlFor="email">Email</label>
+                  <label
+                    className="block text-sm font-medium mb-2"
+                    htmlFor="email"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -122,7 +197,12 @@ function App() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2" htmlFor="message">Message</label>
+                  <label
+                    className="block text-sm font-medium mb-2"
+                    htmlFor="message"
+                  >
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     rows={4}
