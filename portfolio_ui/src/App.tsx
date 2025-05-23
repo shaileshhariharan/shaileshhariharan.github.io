@@ -2,10 +2,12 @@ import {
   Mail,
   Github,
   Linkedin,
+  Rocket,
   ExternalLink,
   Cpu,
   Bike,
   ListTodo,
+  FileText,
 } from "lucide-react";
 
 function App() {
@@ -77,6 +79,77 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-12">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-zinc-50 dark:bg-zinc-900 p-8 rounded-xl shadow-sm card-hover">
+              <FileText className="w-10 h-10 mb-4 text-purple-600" />
+              <h3 className="text-xl font-bold mb-3">
+                PromptResume - AI Resume Builder
+              </h3>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                PromptResume is an AI-powered resume builder that creates
+                professional resumes from your background and skills in seconds.
+                Built with React and Express, it offers an easy interface,
+                real-time preview, and PDF export for quick, polished results.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  React
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  NodeJS
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  ExpressJS
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  GroqCloud
+                </span>
+              </div>
+              <a
+                href="https://github.com/Shaileshhariharan03/prompt_resume"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300"
+              >
+                View Project <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
+            </div>
+
+            <div className="bg-zinc-50 dark:bg-zinc-900 p-8 rounded-xl shadow-sm card-hover">
+              <Rocket className="w-10 h-10 mb-4 text-purple-600" />
+              <h3 className="text-xl font-bold mb-3">
+                Quick Deploy – App Deployment Platform
+              </h3>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                Quick Deploy is a full-stack platform for one-click deployment
+                of frontend apps via GitHub URLs. Built with a React frontend
+                and Node.js microservices, it automates cloning, building, and
+                hosting using S3/Cloudflare, SQS, and Redis—offering a
+                lightweight alternative to Vercel or Netlify.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  React
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  NodeJS
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  ExpressJS
+                </span>
+                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  Redis
+                </span>
+              </div>
+              <a
+                href="https://github.com/Shaileshhariharan03/quick_deploy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300"
+              >
+                View Project <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
+            </div>
+
             <div className="bg-zinc-50 dark:bg-zinc-900 p-8 rounded-xl shadow-sm card-hover">
               <Cpu className="w-10 h-10 mb-4 text-purple-600" />
               <h3 className="text-xl font-bold mb-3">

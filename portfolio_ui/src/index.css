@@ -9,6 +9,9 @@
     font-family: 'Space Grotesk', sans-serif;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600;
