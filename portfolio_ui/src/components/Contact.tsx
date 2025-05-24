@@ -182,7 +182,7 @@ const Contact = () => {
                 <h4 className="font-medium mb-4">Social</h4>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/Shaileshhariharan03"
+                    href="https://github.com/shaileshhariharan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 transition-colors duration-300"

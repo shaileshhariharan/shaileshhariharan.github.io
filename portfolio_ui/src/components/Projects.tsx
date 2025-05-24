@@ -11,7 +11,7 @@ const Projects = () => {
         "PromptResume is an AI-powered resume builder that creates professional resumes from your background and skills in seconds. Built with React and Express, it offers an easy interface, real-time preview, and PDF export for quick, polished results.",
       technologies: ["React", "NodeJS", "ExpressJS", "GroqCloud"],
       links: {
-        github: "https://github.com/Shaileshhariharan03/prompt_resume",
+        github: "https://github.com/shaileshhariharan/prompt_resume",
       },
       icon: FileText,
     },
@@ -22,7 +22,7 @@ const Projects = () => {
         "Quick Deploy is a full-stack platform for one-click deployment of frontend apps via GitHub URLs. Built with a React frontend and Node.js microservices, it automates cloning, building, and hosting using S3/Cloudflare, SQS, and Redis—offering a lightweight alternative to Vercel or Netlify.",
       technologies: ["React", "NodeJS", "ExpressJS", "Redis"],
       links: {
-        github: "https://github.com/Shaileshhariharan03/quick_deploy",
+        github: "https://github.com/shaileshhariharan/quick_deploy",
       },
       icon: Rocket,
     },
@@ -34,7 +34,7 @@ const Projects = () => {
       technologies: ["Python", "OpenCV"],
       links: {
         github:
-          "https://github.com/Shaileshhariharan03/AIEnabledCarParking_OpenCV",
+          "https://github.com/shaileshhariharan/AIEnabledCarParking_OpenCV",
       },
       icon: Cpu,
     },
@@ -45,7 +45,7 @@ const Projects = () => {
         "This is a simple Todo List app built using SwiftUI. The app allows users to create, update, and delete tasks. The tasks are displayed in a list format, and users can mark tasks as completed or pending with a simple tap.",
       technologies: ["SwiftUI", "iOS"],
       links: {
-        github: "https://github.com/Shaileshhariharan03/TodoList_App",
+        github: "https://github.com/shaileshhariharan/TodoList_App",
       },
       icon: ListTodo,
     },
@@ -77,7 +77,7 @@ const Projects = () => {
 
         <div className="mt-16 flex justify-center">
           <a
-            href="https://github.com/Shaileshhariharan03?tab=repositories"
+            href="https://github.com/shaileshhariharan?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 group"

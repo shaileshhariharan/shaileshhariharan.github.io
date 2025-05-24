@@ -6,10 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* In global CSS (e.g., index.css or globals.css) */
 html, body {
-  margin: 0;
-  padding: 0;
+  @apply bg-white text-black dark:bg-black dark:text-white;
   height: 100%;
-  background-color: inherit;
-  color: inherit;
+}
+
+body {
+  padding-bottom: env(safe-area-inset-bottom);
 }
