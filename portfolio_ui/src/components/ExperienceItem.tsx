@@ -32,7 +32,9 @@ const ExperienceItem = ({ experience }: ExperienceItemProps) => {
         </div>
 
         <div className="md:w-3/4">
-          <p className="text-gray-600 mb-4">{experience.description}</p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            {experience.description}
+          </p>
 
           <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-3">
             Key Achievements

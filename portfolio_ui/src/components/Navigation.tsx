@@ -56,7 +56,7 @@ const Navigation = ({ activeSection, onNavClick }: NavigationProps) => {
               ))}
             </ul>
           </div>
-          <div className="border-l border-gray-300 h-24 mx-auto"></div>
+          <div className="border-l border-gray-300 h-24 mx-auto my-4"></div>
         </div>
       </nav>
 

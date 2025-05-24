@@ -58,7 +58,7 @@ function App() {
   }
 
   return (
-    <div className="bg-white text-gray-900 min-h-screen">
+    <div className="bg-white text-gray-900 min-h-screen dark:bg-gray-950 dark:text-gray-200 ">
       <Navigation activeSection={activeSection} onNavClick={handleNavClick} />
 
       <main className="w-full md:pl-24 lg:pl-32">
@@ -72,7 +72,7 @@ function App() {
 
         <section
           id="experience"
-          className="py-24 bg-gray-50  md:rounded-l-3xl rounded-none"
+          className="py-24 bg-gray-50 dark:bg-zinc-950 dark:border dark:border-r-0 dark:border-gray-900 md:rounded-l-3xl rounded-none"
         >
           <Experience />
         </section>

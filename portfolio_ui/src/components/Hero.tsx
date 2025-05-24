@@ -28,7 +28,7 @@ const Hero = () => {
             Full Stack | Python | ML & AI
           </p>
 
-          <p className="text-base md:text-lg text-gray-600 mb-12 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-12 leading-relaxed">
             I build full-stack apps, train AI models, and ship stuff that
             actually works. React, Angular, Django, Streamlit, FastAPI —
             whatever fits. I like clean UIs, fast backends, and smart systems
@@ -40,12 +40,12 @@ const Hero = () => {
               href="#projects"
               className="group flex items-center space-x-2 text-gray-900 hover:text-gray-600 transition-colors duration-300"
             >
-              <span className="text-sm uppercase tracking-widest">
+              <span className="text-sm dark:text-gray-200 uppercase tracking-widest">
                 View Work
               </span>
               <ArrowDown
                 size={16}
-                className="transform group-hover:translate-y-1 transition-transform duration-300"
+                className="transform group-hover:translate-y-1 dark:text-gray-200 transition-transform duration-300"
               />
             </a>
           </div>

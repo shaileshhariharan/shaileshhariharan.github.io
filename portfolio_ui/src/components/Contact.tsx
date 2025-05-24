@@ -68,7 +68,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           <div>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
               Interested in working together? I'm always open to discussing new
               projects, creative ideas or opportunities to be part of your
               vision.
@@ -78,7 +78,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1"
                 >
                   Name
                 </label>
@@ -89,7 +89,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-800 dark:bg-gray-950 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 transition-all duration-300"
                   placeholder="Your name"
                 />
               </div>
@@ -97,7 +97,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1"
                 >
                   Email
                 </label>
@@ -108,7 +108,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 dark:bg-gray-950 dark:border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 transition-all duration-300"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -116,7 +116,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1"
                 >
                   Message
                 </label>
@@ -127,7 +127,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 dark:bg-gray-950 dark:border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 transition-all duration-300"
                   placeholder="Your message"
                 ></textarea>
               </div>
@@ -146,9 +146,8 @@ const Contact = () => {
                   </>
                 )}
               </button>
-
               {submitSuccess && (
-                <div className="text-green-600 mt-2">
+                <div className="text-black dark:text-gray-200 mt-2">
                   Message sent successfully! I'll get back to you soon.
                 </div>
               )}
@@ -164,12 +163,15 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <Mail size={20} className="mt-1 mr-4 text-gray-600" />
+                <Mail
+                  size={20}
+                  className="mt-1 mr-4 text-gray-600 dark:text-gray-200"
+                />
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:hariharanshailesh@gmail.com"
-                    className="text-gray-600 hover:text-gray-900 transition-colors duration-300"
+                    className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-300"
                   >
                     hariharanshailesh@gmail.com
                   </a>
@@ -183,28 +185,28 @@ const Contact = () => {
                     href="https://github.com/Shaileshhariharan03"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 transition-colors duration-300"
                     aria-label="GitHub"
                   >
-                    <Github size={20} />
+                    <Github size={20} className="dark:text-gray-200" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/shailesh-h-32a8b71a8/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-900  dark:hover:bg-gray-800 transition-colors duration-300"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin size={20} />
+                    <Linkedin size={20} className="dark:text-gray-200" />
                   </a>
                   <a
                     href="https://x.com/shailesh__h"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-900  dark:hover:bg-gray-800 transition-colors duration-300"
                     aria-label="Twitter"
                   >
-                    <FaXTwitter size={20} />
+                    <FaXTwitter size={20} className="dark:text-gray-200" />
                   </a>
                 </div>
               </div>
