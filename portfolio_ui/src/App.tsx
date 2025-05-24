@@ -72,7 +72,7 @@ function App() {
 
         <section
           id="experience"
-          className="py-24 bg-gray-50 dark:bg-zinc-950 dark:border dark:border-r-0 dark:border-gray-900 md:rounded-l-3xl rounded-none"
+          className="py-24 bg-gray-50 dark:bg-zinc-950 md:dark:border md:dark:border-r-0 dark:border-gray-900 md:rounded-l-3xl rounded-none"
         >
           <Experience />
         </section>
