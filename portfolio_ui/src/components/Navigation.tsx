@@ -67,7 +67,7 @@ const Navigation = ({ activeSection, onNavClick }: NavigationProps) => {
         }`}
       >
         <ul className="flex flex-col space-y-8 items-center">
-          {navItems.map((item) => (
+          {navItems.reverse().map((item) => (
             <li key={item.id}>
               <button
                 onClick={() => handleNavItemClick(item.id)}
