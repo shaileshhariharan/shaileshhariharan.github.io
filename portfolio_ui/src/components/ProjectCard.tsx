@@ -18,7 +18,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, icon: Icon = FileText }: ProjectCardProps) => {
   return (
-    <div className="group relative bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-400 transition-all duration-300">
+    <div className="group relative bg-white border border-gray-200 rounded-lg p-6 md:hover:border-gray-400 transition-all duration-300">
       <div className="space-y-4">
         <Icon className="w-8 h-8 mb-4 text-black" />
         <h3 className="text-xl font-medium">{project.title}</h3>
