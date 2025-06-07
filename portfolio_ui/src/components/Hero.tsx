@@ -25,7 +25,7 @@ const Hero = () => {
 
         <div className="max-w-2xl">
           <p className="text-xl md:text-2xl font-light mb-6">
-            Full Stack | Python | ML & AI
+            Full Stack | Python | AI & ML
           </p>
 
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-12 leading-relaxed">

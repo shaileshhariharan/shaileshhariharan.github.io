@@ -8,6 +8,7 @@ interface Project {
   technologies: string[];
   links: {
     github: string;
+    live?: string; // 👈 optional live link
   };
 }
 
@@ -37,14 +38,31 @@ const ProjectCard = ({ project, icon: Icon = FileText }: ProjectCardProps) => {
           ))}
         </div>
 
-        <a
-          href={project.links.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center p-2 text-sm text-gray-900 hover:text-gray-600 dark:text-gray-200 dark:hover:text-gray-100  transition-colors duration-300"
-        >
-          View Project <ExternalLink className="w-4 h-4 ml-2" />
-        </a>
+        <div className="flex gap-4 items-center pt-2">
+          <a
+            href={project.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm text-gray-900 hover:text-gray-600 dark:text-gray-200 dark:hover:text-gray-100 transition-colors duration-300"
+          >
+            View Project <ExternalLink className="w-4 h-4 ml-2" />
+          </a>
+
+          {project.links.live && (
+            <a
+              href={project.links.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-sm text-green-600 hover:text-green-400 dark:text-green-400 dark:hover:text-green-300 transition-colors duration-300"
+            >
+              Live
+              <span className="relative flex h-2 w-2 ml-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

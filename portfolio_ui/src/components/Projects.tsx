@@ -12,6 +12,7 @@ const Projects = () => {
       technologies: ["React", "NodeJS", "ExpressJS", "GroqCloud"],
       links: {
         github: "https://github.com/shaileshhariharan/prompt_resume",
+        live: "https://prompt-resume-tau.vercel.app",
       },
       icon: FileText,
     },
