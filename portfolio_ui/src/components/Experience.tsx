@@ -28,11 +28,11 @@ const Experience = () => {
         </h2>
 
         <div className="mb-16">
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mb-6">
+          <p className="text-lg md:text-xl text-gray-600  max-w-3xl mb-6">
             I'm a tech enthusiast and creative problem solver passionate about
             blending software engineering with visual design.
           </p>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl">
+          <p className="text-lg md:text-xl text-gray-600  max-w-3xl">
             I work at the intersection of code and creativity, building
             high-performance apps and intuitive interfaces using tools like
             Python, Swift, React, and Blender. From full-stack development to AI

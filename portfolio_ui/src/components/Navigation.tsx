@@ -31,7 +31,7 @@ const Navigation = ({ activeSection, onNavClick }: NavigationProps) => {
       <div className="md:hidden fixed top-6 right-6 z-50">
         <button
           onClick={toggleMobileMenu}
-          className="p-2 bg-white dark:bg-gray-900 rounded-full shadow-md transition-all duration-300"
+          className="p-2 bg-white  rounded-full shadow-md transition-all duration-300"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -62,7 +62,7 @@ const Navigation = ({ activeSection, onNavClick }: NavigationProps) => {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`fixed inset-0 bg-white dark:bg-gray-950 z-40 flex flex-col justify-center items-center transition-transform duration-500 md:hidden ${
+        className={`fixed inset-0 bg-white  z-40 flex flex-col justify-center items-center transition-transform duration-500 md:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
